@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+
+body {
+    background-color:#f9f3fc;
+    background-image: url(img/Background-encript-descript-light.jpg);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1860px;
+}
+
+.logo {
+    display: block;
+    margin-left: 120px;
+}
+
+.logo-dark {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 30px 0px 0px 180px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.caixa-de-texto {
+    margin-top: 100px;
+}
+
+#texto-caixa {
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-size: 35px;
+    background: none;
+    border: none;
+    resize: none;
+    margin: 50px 0px 0px 120px;  
+}
+
+#texto-caixa:focus, label:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    resize: none;
+    overflow-y: hidden;
+}
+
+#texto-caixa::placeholder {
+    color: #0A3871;
+}
+
+.info-e-botoes {
+    margin: 50px 0px 0px 180px;
+}
+
+.info {
+    display: flex;
+    width: 52%;
+    justify-content: center;  
+    gap: 5px;
+}
+
+.botoes-cripto {
+    display: flex;
+    margin:30px 0px 0px 300px;
+    width: 50%;
+    gap: 30px;
+}
+
+.criptografar {
+    font-size: 18px;
+    color: white;
+    width: 328px;
+    padding: 24px;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: #343a405b 3px 7px 15px;
+}
+
+.criptografar:hover {
+    background: #06264e;
+    
+}
+
+.descriptografar {
+    font-size: 18px;
+    color: #0A3871;
+    width: 328px;
+    padding: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: #343a405b 3px 7px 15px;
+}
+
+.descriptografar:hover {
+    background: #c0cee0;
+}
+
+.retangulo-cript-descript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30px;
+    width: 360px;
+    height: 844px;
+    border: 1px solid #0A3871;
+    box-shadow: #343a405b 3px 7px 15px;
+    border-radius: 32px;
+}
+
+.imagem-lupa {
+    /* margin-top: 150px; */
+    width:70%;
+}
+
+.exibicao-de-texto {  
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 90px;
+    text-align: center;
+} 
+
+#texto-descpriptografado, label:focus {
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: none;
+    resize: none;
+    overflow-y: hidden;
+    cursor:default;
+}
+
+.copiar {
+    font-size: 20px;
+    color: #0A3871;
+    width: 100px;
+    padding: 15px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.copiar:hover {
+    background: #c0cee0;
+}
+
+.subtexto {
+    text-align: center;
+    margin-top: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* botão troca de tema claro-es */
+body.dark {
+    background: #292c35;
+    color: #c0cee0;
+    background-image: url(img/Background-encript-descript-dark.jpg);
+}
+
+.checkbox {
+    opacity: 0;
+}
+.label-dark-light {
+    background: #15161b;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2px 7px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label-dark-light .ball {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label-dark-light .ball {
+    transform: translateX(35px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12
+}
+
+.texto-botao-dark-light {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: -60px;
+}
+
+.dark .texto-botao-dark-light {
+    color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: -60px;
+}
+
+.dark #texto-caixa {
+    color: #D8DFE8;
+}
+.dark #texto-caixa::placeholder {
+    color: #D8DFE8;
+}
+
+.dark .logo {
+    display: none;
+    margin-left: 120px;
+}
+
+.dark .logo-dark {
+    display: block;
+    margin-left: 120px;
+}
+
+.dark .descriptografar {
+    box-shadow: none;
+}
+
+.dark .descriptografar:hover {
+
+    color: #06264e;
+    transition: 0.3s;
+    background: #f1c40f;
+}
+
+.dark .criptografar {
+    color: #121213;
+    box-shadow: none;
+    background: #1361c0;
+}
+
+.dark .criptografar:hover {
+    color: white;
+    background: #0A3871;
+    transition: 0.3s;
+}

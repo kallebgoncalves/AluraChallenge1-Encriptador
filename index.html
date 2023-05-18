@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-alura.png" type="image/x-icon">
+    <script defer src="script.js" ></script>
+    <title>Alura Challenge - Desafio 1</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/Vector.png" alt="Logo da Alura"></a>
+        <a href="index.html"><img class="logo-dark" src="img/Vector-dark.png" alt="Logo escura da Alura"></a>
+    </header>
+    <main>
+        <section class="conteudo-principal">
+            <div class="caixa-de-texto" >
+                <textarea id="texto-caixa" cols="44" rols="32" placeholder="Digite o seu texto"></textarea>
+            </div>
+            <div class="btn-dark-light">
+                <input type="checkbox" name="checkbox" class="checkbox" id="chk">
+                <label class="label-dark-light" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+                <p class="texto-botao-dark-light">Ativar / Desativar modo noturno</p>
+            </div>
+            <div class="retangulo-cript-descript">
+                <img class="imagem-lupa" src="img/High quality products 1 1.svg" alt="">
+                <h2 class="exibicao-de-texto">Nenhuma mensagem encontrada</h2>
+                <textarea id="texto-descpriptografado" cols="25" rols="50" readonly></textarea>
+                <button id="id-copiado" class="copiar" onclick="copiarTexto()">Copiar</button>
+                <!-- <p class="subtexto">Digite um texto que você deseja criptografar ou descriptografar.</p> -->
+            </div>
+        </section>
+        <section class="info-e-botoes">
+            <div class="info">
+                <img class="info-simbolo" src="img/Vector-aleta.png" alt="informação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes-cripto">
+                <button class="criptografar" onclick="btnEncriptar(); ">Criptografar</button>
+                <button class="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Kalleb Gonçalves &copy; 2023 - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
